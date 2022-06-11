@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: "Bellefair", serif;
+}
+
+// colors
+
+$black: #0b0d17;
+$white: #ffffff;
+$blue: #d0d6f9;
+
+///color classes
+
+.black {
+  color: $black;
+}
+
+.white {
+  color: $white;
+}
+
+.blue {
+  color: $blue;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+}
+
+.bgw {
+  background-color: $white;
+  opacity: 0.25;
+}
+
+// typography
+
+@mixin fs($size, $ls) {
+  font-size: $size;
+  letter-spacing: $ls;
+}
+
+.h1 {
+  @include fs(9.375em, normal);
+}
+
+.h2 {
+  @include fs(6.25em, normal);
+}
+
+.h3 {
+  @include fs(3.5em, normal);
+}
+.h4 {
+  @include fs(2em, normal);
+}
+.h5 {
+  @include fs(1.75em, 4.75px);
+}
+.sh1 {
+  @include fs(1.75em, normal);
+}
+
+.sh2 {
+  @include fs(0.875em, 2.35px);
+}
+
+.ntext {
+  @include fs(1em, 2.7px);
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.number {
+  font-weight: 700;
+}
+///composition
