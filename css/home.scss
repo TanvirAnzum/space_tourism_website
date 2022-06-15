@@ -8,87 +8,6 @@ body {
 
 // header area
 
-.header-area {
-  min-width: 100%;
-  min-height: 16vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .header {
-    min-width: 96%;
-    display: flex;
-    align-items: center;
-    position: relative;
-
-    .header-img {
-      margin-right: auto;
-    }
-
-    .hl {
-      width: 40%;
-      height: 1px;
-      position: absolute;
-      left: 7em;
-      z-index: 20;
-    }
-
-    .navigation {
-      .nav-icon {
-        display: none;
-      }
-      .nav-area {
-        min-width: 55vw;
-        min-height: 8vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        ul {
-          width: 70%;
-          list-style-type: none;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 1em;
-
-          li {
-            a {
-              text-decoration: none;
-            }
-          }
-          .active {
-            position: relative;
-          }
-          .active::before {
-            content: "";
-            position: absolute;
-            min-height: 2px;
-            width: 100%;
-            background-color: white;
-            bottom: calc(0% - 3vh);
-          }
-
-          li:hover {
-            a {
-              position: relative;
-            }
-            a::before {
-              content: "";
-              position: absolute;
-              min-height: 2px;
-              width: 100%;
-              background-color: white;
-              opacity: 0.5;
-              bottom: calc(0% - 3vh);
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 // main area
 
 .main-area {
@@ -102,15 +21,56 @@ body {
     width: 100%;
     min-height: 60vh;
     display: flex;
-    align-items: center;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: center;
 
     &__title {
+      height: 100%;
       width: 50%;
-      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      &--text {
+        width: 60%;
+      }
     }
     &__explore {
-      width: 50%;
+      width: 30%;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        width: 8em;
+        height: 8em;
+        font-size: 2em;
+        border-radius: 50%;
+        border: none;
+        position: relative;
+        z-index: 20;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      button:hover {
+        cursor: pointer;
+        outline: 2em solid rgba($color: #24262f, $alpha: 0.8);
+      }
+      // button:hover::before {
+      //   content: "";
+      //   position: absolute;
+      //   border-radius: 50%;
+      //   width: 12em;
+      //   height: 12em;
+      //   background-color: rgb(230, 225, 225);
+      //   top: calc(50% - 6em);
+      //   left: calc(50% - 6em);
+      //   z-index: 0;
+      //   opacity: 0.2;
+      // }
     }
   }
 }

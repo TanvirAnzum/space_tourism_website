@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
 
+    <!-- css -->
+    <link rel="stylesheet" href="../css/utility.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/d-moon.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <!-- 
   00 Home
   01 Destination
   02 Crew
@@ -24,14 +34,102 @@
 
   Moon
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
+  
 
   Avg. distance
   384,400 km
 
   Est. travel time
-  3 days
-</body>
+  3 days -->
+
+    <header class="header-area">
+      <div class="header">
+        <div class="header-img">
+          <img src="../assets/shared/logo.svg" alt="logo" />
+        </div>
+        <div class="hl bgw">
+          <div></div>
+        </div>
+        <nav class="navigation">
+          <div class="nav-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="nav-area blur">
+            <ul class="navbar">
+              <li class="nav-links">
+                <a href="index.html" class="white ntext upper-case">
+                  <span class="number">00</span>
+                  Home
+                </a>
+              </li>
+              <li class="nav-links active">
+                <a href="#" class="white ntext upper-case">
+                  <span class="number">01</span>
+                  Destination
+                </a>
+              </li>
+              <li class="nav-links">
+                <a href="#" class="white ntext upper-case">
+                  <span class="number">02</span>
+                  Crew
+                </a>
+              </li>
+              <li class="nav-links">
+                <a href="#" class="white ntext upper-case">
+                  <span class="number">03</span>
+                  Technology
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-area">
+      <div class="main">
+        <div class="left">
+          <div class="left__header">
+            <h3 class="h5 white upper-case">
+              <span class="opa1">01</span> Pick your destination
+            </h3>
+          </div>
+          <div class="left__img">
+            <img src="../assets/destination/image-moon.png" alt="moon image" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-nav">
+            <ul>
+              <li><a href="#" class="white upper-case">Moon</a></li>
+              <li><a href="#" class="white upper-case">Mars</a></li>
+              <li><a href="#" class="white upper-case">Europa</a></li>
+              <li><a href="#" class="white upper-case">Titan</a></li>
+            </ul>
+          </div>
+          <h1>MOON</h1>
+          <div class="right-para">
+            <p>
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+          </div>
+          <div class="hl"></div>
+          <div class="right-end">
+            <div class="distance">
+              <h5>Avg. distance</h5>
+              <h3>384,400 km</h3>
+            </div>
+            <div class="estimated">
+              <h5>Est. travel time</h5>
+              <h3>3 days</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

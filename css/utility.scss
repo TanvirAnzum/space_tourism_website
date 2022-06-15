@@ -37,6 +37,10 @@ $blue: #d0d6f9;
   opacity: 0.25;
 }
 
+.opa1 {
+  opacity: 0.25;
+}
+
 // typography
 
 @mixin fs($size, $ls) {
@@ -73,6 +77,10 @@ $blue: #d0d6f9;
   @include fs(1em, 2.7px);
 }
 
+.p1 {
+  @include fs(1.5em, normal);
+  line-height: 1.6;
+}
 .upper-case {
   text-transform: uppercase;
 }

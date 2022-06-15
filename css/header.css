@@ -1,0 +1,67 @@
+.header-area {
+  min-width: 100%;
+  min-height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-area .header {
+  min-width: 96%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-area .header .header-img {
+  margin-right: auto;
+}
+.header-area .header .hl {
+  width: 40%;
+  height: 1px;
+  position: absolute;
+  left: 7em;
+  z-index: 20;
+}
+.header-area .header .navigation .nav-icon {
+  display: none;
+}
+.header-area .header .navigation .nav-area {
+  min-width: 55vw;
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-area .header .navigation .nav-area ul {
+  width: 70%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.header-area .header .navigation .nav-area ul li a {
+  text-decoration: none;
+}
+.header-area .header .navigation .nav-area ul .active {
+  position: relative;
+}
+.header-area .header .navigation .nav-area ul .active::before {
+  content: "";
+  position: absolute;
+  min-height: 2px;
+  width: 100%;
+  background-color: white;
+  bottom: calc(0% - 3vh);
+}
+.header-area .header .navigation .nav-area ul li:hover a {
+  position: relative;
+}
+.header-area .header .navigation .nav-area ul li:hover a::before {
+  content: "";
+  position: absolute;
+  min-height: 2px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.5;
+  bottom: calc(0% - 3vh);
+}/*# sourceMappingURL=header.css.map */
