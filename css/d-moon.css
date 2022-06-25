@@ -38,7 +38,6 @@ body {
 .main-area .main .right {
   width: 50%;
   height: 60%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -61,4 +60,38 @@ body {
 .main-area .main .right-nav ul li a::before {
   content: "";
   position: absolute;
+}
+.main-area .main .right-nav ul .r-active {
+  position: relative;
+}
+.main-area .main .right-nav ul .r-active::before {
+  content: "";
+  position: absolute;
+  min-height: 2px;
+  width: 100%;
+  background-color: white;
+  bottom: calc(0% - 1vh);
+}
+.main-area .main .right-nav ul li:hover a {
+  position: relative;
+}
+.main-area .main .right-nav ul li:hover a::before {
+  content: "";
+  position: absolute;
+  min-height: 2px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.5;
+  bottom: calc(0% - 1vh);
+}
+.main-area .main .right .right-end {
+  height: 12vh;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-area .main .right .distance h5,
+.main-area .main .right .estimated h5 {
+  color: #d0d6f9;
 }/*# sourceMappingURL=d-moon.css.map */

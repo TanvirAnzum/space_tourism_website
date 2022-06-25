@@ -41,7 +41,7 @@ body {
     .right {
       width: 50%;
       height: 60%;
-      border: 1px solid red;
+
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -64,6 +64,44 @@ body {
               position: absolute;
             }
           }
+          .r-active {
+            position: relative;
+          }
+          .r-active::before {
+            content: "";
+            position: absolute;
+            min-height: 2px;
+            width: 100%;
+            background-color: white;
+            bottom: calc(0% - 1vh);
+          }
+          li:hover {
+            a {
+              position: relative;
+            }
+            a::before {
+              content: "";
+              position: absolute;
+              min-height: 2px;
+              width: 100%;
+              background-color: white;
+              opacity: 0.5;
+              bottom: calc(0% - 1vh);
+            }
+          }
+        }
+      }
+      .right-end {
+        height: 12vh;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .distance,
+      .estimated {
+        h5 {
+          color: #d0d6f9;
         }
       }
     }

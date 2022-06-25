@@ -61,11 +61,14 @@
 .sh1 {
   font-size: 1.75em;
   letter-spacing: normal;
+  line-height: 2em;
+  font-weight: 400;
 }
 
 .sh2 {
   font-size: 0.875em;
   letter-spacing: 2.35px;
+  font-weight: 400;
 }
 
 .ntext {
@@ -85,4 +88,13 @@
 
 .number {
   font-weight: 700;
+}
+
+.wide-70 {
+  width: 70%;
+}
+
+.hl-2 {
+  width: 70%;
+  min-height: 1px;
 }/*# sourceMappingURL=utility.css.map */

@@ -1,6 +1,28 @@
 fetch("../data.json")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
-    console.log(data["crew"]);
+    const ul = document.querySelector(".page_nav");
+    let lists = ul.children;
+    for (let i = 0; i < lists.length; i++) {
+      lists[i].addEventListener("click", () => {
+        let d = data.destinations[i];
+        console.log(d);
+        update(d.name, d.images.png, d.description, d.travel, d.distance);
+      });
+    }
   });
+
+function update(nme, image, desc, tr, dis) {
+  const img = document.querySelector(".img");
+  const name = document.querySelector(".name");
+  const travel = document.querySelector(".travel");
+  const distance = document.querySelector(".distance-value");
+  const description = document.querySelector(".description");
+
+  img.src = "." + image;
+  console.log(img.src);
+  name.innerText = nme;
+  description.innerText = desc;
+  travel.innerText = tr;
+  distance.innerText = dis;
+}

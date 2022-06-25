@@ -67,10 +67,13 @@ $blue: #d0d6f9;
 }
 .sh1 {
   @include fs(1.75em, normal);
+  line-height: 2em;
+  font-weight: 400;
 }
 
 .sh2 {
   @include fs(0.875em, 2.35px);
+  font-weight: 400;
 }
 
 .ntext {
@@ -89,3 +92,12 @@ $blue: #d0d6f9;
   font-weight: 700;
 }
 ///composition
+
+.wide-70 {
+  width: 70%;
+}
+
+.hl-2 {
+  width: 70%;
+  min-height: 1px;
+}
