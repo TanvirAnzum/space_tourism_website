@@ -3,9 +3,13 @@ fetch("../data.json")
   .then((data) => {
     const ul = document.querySelector(".page_nav");
     let lists = ul.children;
+    let active = 0;
     for (let i = 0; i < lists.length; i++) {
       lists[i].addEventListener("click", () => {
         let d = data.destinations[i];
+        lists[active].classList.remove("r-active");
+        active = i;
+        lists[active].classList.add("r-active");
         console.log(d);
         update(d.name, d.images.png, d.description, d.travel, d.distance);
       });

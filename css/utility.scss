@@ -58,9 +58,11 @@ $blue: #d0d6f9;
 
 .h3 {
   @include fs(3.5em, normal);
+  font-weight: 400;
 }
 .h4 {
   @include fs(2em, normal);
+  font-weight: 400;
 }
 .h5 {
   @include fs(1.75em, 4.75px);
