@@ -94,4 +94,20 @@ body {
 .main-area .main .right .distance h5,
 .main-area .main .right .estimated h5 {
   color: #d0d6f9;
+}
+
+@media all and (max-width: 1500px) {
+  .right {
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+  .right > * {
+    width: 70%;
+  }
+  .right-end {
+    width: 70% !important;
+  }
+  .wide-70 {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=destination.css.map */

@@ -4,4 +4,86 @@ body {
   background: url(../assets/technology/background-technology-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.main-area {
+  height: 84vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-area .main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-area .main .left {
+  width: 60%;
+  height: 75%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.main-area .main .left__header {
+  margin-left: 6.8em;
+}
+.main-area .main .left__middle {
+  display: flex;
+  align-items: flex-start;
+  width: 70%;
+  height: 70%;
+  margin-left: 12em;
+}
+.main-area .main .left__nav {
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 1.5em;
+}
+.main-area .main .left .nav-btn {
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.main-area .main .left .nav-btn:hover {
+  border: 1px solid white;
+}
+.main-area .main .left .nb-active {
+  background-color: white;
+  color: black;
+}
+.main-area .main .left__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1em;
+}
+.main-area .right {
+  align-self: center;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (max-width: 1500px) {
+  .left__header {
+    margin-left: 5.15em !important;
+  }
+  .left__middle {
+    margin-left: 9em !important;
+  }
+  .right {
+    justify-content: flex-end !important;
+  }
 }/*# sourceMappingURL=technology.css.map */

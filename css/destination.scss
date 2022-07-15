@@ -107,3 +107,20 @@ body {
     }
   }
 }
+
+@media all and (max-width: 1500px) {
+  .right {
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+  .right > * {
+    width: 70%;
+  }
+  .right-end {
+    width: 70% !important;
+  }
+
+  .wide-70 {
+    width: 100% !important;
+  }
+}

@@ -22,13 +22,13 @@ body {
 }
 .main-area .main__title {
   height: 100%;
-  width: 50%;
+  width: max(50%, 30vw);
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 .main-area .main__title--text {
-  width: 60%;
+  width: max(60%, 35em);
 }
 .main-area .main__explore {
   width: 30%;
@@ -53,4 +53,41 @@ body {
 .main-area .main__explore button:hover {
   cursor: pointer;
   outline: 2em solid rgba(36, 38, 47, 0.8);
+}
+
+@media all and (max-width: 768px) {
+  body {
+    background: url("../assets/home/background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hl {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    min-height: 84vh !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 4em;
+  }
+  .main__title {
+    width: 450px !important;
+    text-align: center;
+    gap: 1em !important;
+  }
+  .main__title .tittle-text {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+  .main__title .para-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .main__explore {
+    min-height: 300px !important;
+    width: 80% !important;
+  }
 }/*# sourceMappingURL=home.css.map */
